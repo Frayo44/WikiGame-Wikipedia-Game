@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_activity_wrapper"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:weightSum="2">
+
+        <android.support.v7.widget.AppCompatImageButton
+            android:id="@+id/back"
+            android:layout_width="@dimen/ic_mini_icon_radius"
+            android:layout_height="@dimen/ic_mini_icon_radius"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="start"
+            android:background="@color/transparent"
+            android:tint="@color/white"
+            app:srcCompat="@drawable/ic_arrow_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Level 9"
+            android:id="@+id/tvLevelName"
+            android:visibility="gone"
+            android:textSize="24sp"
+            android:textStyle="bold"/>
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/settings"
+            android:layout_width="@dimen/ic_mini_icon_radius"
+            android:layout_height="@dimen/ic_mini_icon_radius"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="end"
+            android:tint="@color/white"
+            app:srcCompat="@drawable/ic_settings" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+</LinearLayout>

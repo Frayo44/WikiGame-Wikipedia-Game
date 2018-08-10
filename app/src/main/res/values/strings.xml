@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">WIkiGame</string>
+    <string name="error_1_no_connection_desc">A network error has occurred. Make sure you have a working internet connection.</string>
+    <string name="error_1_no_connection">Network Error</string>
+
+    <string name="username">Username</string>
+    <string name="username_pattern_error">Username pattern is not correct</string>
+    <string name="username_instructions">Please register by entering a username (3–15 chars long) in order to continue. </string>
+
+
+    <string name="next_level">NEXT</string>
+    <string name="restart">RESTART</string>
+    <string name="menu">MENU</string>
+    <string name="wikidisplay_ad_id">ca-app-pub-9470442411108307/1499231472</string>
+</resources>

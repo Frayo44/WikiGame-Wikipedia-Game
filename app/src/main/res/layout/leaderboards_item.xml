@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="3dp"
+    card_view:cardBackgroundColor="#fafafa"
+    card_view:cardCornerRadius="4dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/itemView"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp"
+        android:weightSum="1">
+
+        <RelativeLayout
+            android:id="@+id/tvPlace2"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+           >
+
+            <TextView
+                android:id="@+id/tvPlace"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:alpha="0.7"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:lines="1"
+                android:text="10"
+                android:textColor="@color/material_black_54"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:id="@+id/ivFirstPlaces"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:layout_height="40dp"
+                android:src="@drawable/silvermedal"/>
+
+
+        </RelativeLayout>
+
+        <com.github.siyamed.shapeimageview.CircularImageView
+            android:id="@+id/ciCountry"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/tvPlace2"
+            android:src="@drawable/israelflag"
+            app:civ_border_color="#bdc3c0"
+            app:civ_border_overlay="true"
+        app:civ_border_width="0.5dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="left|center_vertical"
+            android:layout_toRightOf="@+id/ciCountry"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:id="@+id/tvDisplayName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:alpha="0.7"
+                android:gravity="left"
+                android:text="Location"
+                android:textColor="@color/material_black_87"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvPoints"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Description"
+                android:textColor="#0b8042"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+

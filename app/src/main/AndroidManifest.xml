@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yoavfranco.wikigame">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/wiikgamelogo_ver4"
+        android:label="@string/app_name"
+        android:hardwareAccelerated="true"
+        android:supportsRtl="false"
+        android:name=".activities.MyApplication"
+        android:theme="@style/AppTheme"
+        android:screenOrientation="portrait">
+        <activity
+            android:name=".activities.LoadingActivity"
+            android:theme="@style/SplashScreen"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".activities.MainActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".activities.SearchActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activities.WikiDisplayActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NewWikiPage"
+            />
+
+
+
+        <service
+            android:name=".services.MyAndroidFirebaseMsgService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <service
+            android:name=".services.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+
+
+    </application>
+
+</manifest>

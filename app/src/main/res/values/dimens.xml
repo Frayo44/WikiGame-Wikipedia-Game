@@ -1,0 +1,15 @@
+<resources>
+    <dimen name="ic_mini_icon_radius">32dp</dimen>
+    <dimen name="level_radius">54dp</dimen>
+    <dimen name="fab_elevation">0dp</dimen>
+    <dimen name="fab_elevation_clicked">0dp</dimen>
+    <dimen name="play_fab_margin">0dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+
+    <dimen name="spacing_med">4dp</dimen>
+    <dimen name="spacing_sm">2dp</dimen>
+</resources>

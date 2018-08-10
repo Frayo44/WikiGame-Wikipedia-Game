@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <LinearLayout
+        android:id="@+id/game_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/game_wrappper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true">
+            <LinearLayout
+                android:id="@+id/articleWrapper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="sans-serif-thin"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvStartWithInp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines = "1"
+                    android:singleLine="true"
+                    android:maxWidth="250dip"
+                    android:ellipsize="end"
+                    android:fontFamily="sans-serif-thin"
+                    android:layout_gravity="center_horizontal"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="@color/white"
+                    android:textStyle="bold|normal"/>
+
+
+                <TextView
+                    android:id="@+id/tvStartSubject"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:alpha="1"
+                    android:gravity="right"
+                    android:layout_gravity="right"
+                    android:fontFamily="sans-serif-thin"
+                    android:text="Car Type"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/material_grey_400"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/icArrowTop"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_toRightOf="@id/articleWrapper"
+                android:tint="@color/colorPrimaryDark"
+                app:srcCompat="@drawable/ic_arrow_list" />
+
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/iv_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:rotation="90"
+            android:tint="@color/white"
+            app:srcCompat="@drawable/ic_arrow" />
+
+        <RelativeLayout
+            android:id="@+id/dsfsd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true">
+            <LinearLayout
+                android:id="@+id/articleBottomWrapper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/tvEndWithInp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines = "1"
+                    android:singleLine="true"
+                    android:maxWidth="250dip"
+                    android:ellipsize="end"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="sans-serif-thin"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="@color/white"
+                    android:textStyle="bold|normal"/>
+
+
+                <TextView
+                    android:id="@+id/tvTargetSubject"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:alpha="1"
+                    android:gravity="right"
+                    android:layout_gravity="right"
+                    android:fontFamily="sans-serif-thin"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/material_grey_400"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="50dp"
+                android:id="@+id/icArrowBottom"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_toRightOf="@id/articleBottomWrapper"
+                android:tint="@color/colorPrimaryDark"
+                app:srcCompat="@drawable/ic_arrow_list" />
+
+
+        </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/action_buttons_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:clipToPadding="false"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp"
+        android:weightSum="5"><com.yoavfranco.wikigame.views.RoundButton
+            android:id="@+id/play_now"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:tint="@color/background"
+            app:backgroundTint="@color/white"
+            app:elevation="@dimen/fab_elevation"
+            app:fabSize="normal"
+            app:srcCompat="@drawable/ic_play" />
+
+
+        <com.yoavfranco.wikigame.views.RoundButton
+            android:id="@+id/reset"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="2"
+            android:tint="@color/background"
+            android:visibility="invisible"
+            app:backgroundTint="@color/white"
+            app:elevation="@dimen/fab_elevation"
+            app:fabSize="mini"
+            app:srcCompat="@drawable/ic_replay" />
+
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/best_score_wrapper_clicks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_centerInParent="true"
+            android:weightSum="5">
+
+            <TextView
+                android:id="@+id/tvBestScoreClicks"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:fontFamily="sans-serif-thin"
+                android:layout_gravity="bottom"
+                android:text="Best: 10 "
+                android:alpha="0.7"
+                android:textStyle="bold"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:tint="@color/white"
+                android:gravity="center"
+                android:alpha="0.7"
+                app:srcCompat="@drawable/ic_clicks"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/best_score_wrapper_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:orientation="horizontal"
+            android:layout_centerInParent="true"
+            android:weightSum="5">
+
+            <TextView
+                android:id="@+id/tvBestTime"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:fontFamily="sans-serif-thin"
+                android:layout_gravity="bottom"
+                android:text="Best: 10 "
+                android:alpha="0.7"
+                android:textStyle="bold"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                />
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:tint="@color/white"
+                android:gravity="center"
+                android:alpha="0.7"
+                app:srcCompat="@drawable/ic_alarm"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

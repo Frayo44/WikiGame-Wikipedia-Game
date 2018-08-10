@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "939162560749",
+    "firebase_url": "https://wikigame-1672c.firebaseio.com",
+    "project_id": "wikigame-1672c",
+    "storage_bucket": "wikigame-1672c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:939162560749:android:5ab970e9effe0668",
+        "android_client_info": {
+          "package_name": "com.yoavfranco.wikigame"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "939162560749-rfjikv38fagv6ba656lv5i4imjagmr4p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChrICEzzVbmxtWxBsmkvT6ydicL7zmO_I"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
